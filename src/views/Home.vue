@@ -1,12 +1,12 @@
 <template>
   <div class="home">
-    <!-- <div class="home">
-      <el-button type="danger">危险按钮</el-button>
-    </div> -->
+    <transition name="fade">
+      <LeftNav v-if="showNav" @func="getMsgFormSon"></LeftNav>
+    </transition>
     <div class="header">
       <div class="headerColor">
         <div class="nav">
-          <div class="logo">
+          <div class="logo" @click="openNav">
             <i class="el-icon-s-operation"></i>
             JayBerg
           </div>
@@ -53,12 +53,12 @@
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import LeftNav from '@/components/LeftNav.vue'
 
 export default {
   name: 'Home',
   components: {
-    HelloWorld
+    LeftNav
   },
   data(){
     return{
@@ -71,14 +71,21 @@ export default {
         // 图片父容器高度
         bannerHeight: 1000,
         // 浏览器宽度
-        screenWidth: 0
+        screenWidth: 0,
+        showNav: false
     }
   },
    methods: {
-    setSize: function() {
+    setSize() {
       // 通过浏览器宽度(图片宽度)计算高度
       this.bannerHeight = (426 / 1920) * this.screenWidth;
-    }
+    },
+    openNav() {
+      this.showNav = true
+    },
+    getMsgFormSon(data){
+      this.showNav = data
+    }
   },
   mounted() {
     
@@ -95,7 +102,12 @@ export default {
 </script>
 
 <style scope>
-
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
 .min_title{
   width: 85%;
   color: rgb(255, 255, 255);
