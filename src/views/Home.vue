@@ -10,7 +10,12 @@
             <i class="el-icon-s-operation"></i>
             JayBerg
           </div>
-          <div class="active"><i class="el-icon-search"></i></div>
+          <div class="active">
+            <i class="el-icon-headset" @click="dialogTableVisible = true"></i>
+            <el-dialog title="播放音乐" :visible.sync="dialogTableVisible">
+                <iframe class="music" frameborder="no" border="0" marginwidth="0" marginheight="0" width=260 height=86 src="//music.163.com/outchain/player?type=2&id=1299557101&auto=1&height=66"></iframe>
+            </el-dialog>
+          </div>
         </div>
         <div id="banner">
           <div class="inner">
@@ -72,7 +77,8 @@ export default {
         bannerHeight: 1000,
         // 浏览器宽度
         screenWidth: 0,
-        showNav: false
+        showNav: false,
+        dialogTableVisible: false,
     }
   },
    methods: {
@@ -102,8 +108,12 @@ export default {
 </script>
 
 <style scope>
+.music{
+  width: 1rem;
+  overflow: hidden;
+}
 .fade-enter-active, .fade-leave-active {
-  transition: opacity .5s;
+  transition: opacity .3s;
 }
 .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
   opacity: 0;
@@ -154,6 +164,7 @@ export default {
 {
   line-height: .2rem;
   margin-right: .1rem;
+  cursor:pointer;
 }
 
 .active,.logo
