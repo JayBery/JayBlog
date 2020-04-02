@@ -11,26 +11,36 @@
       </div>
     </div>
     <div class="navMain">
-      <div class="item">
-        <i class="el-icon-s-home"></i>
-        回到首页
-      </div>
-      <div class="item">
-        <i class="el-icon-star-on"></i>
-        推荐文章
-      </div>
-      <div class="item">
-        <i class="el-icon-s-order"></i>
-        最新文章
-      </div>
-      <div class="item">
-        <i class="el-icon-s-promotion"></i>
-        个人空间
-      </div>
-      <div class="item">
-        <i class="el-icon-s-custom"></i>
-        关于作者
-      </div>
+      <router-link tag="div" to="/">
+        <div class="item">
+          <i class="el-icon-s-home"></i>
+          回到首页
+        </div>
+      </router-link>
+      <router-link tag="div" to="/goodArticle">
+        <div class="item">
+          <i class="el-icon-star-on"></i>
+          推荐文章
+        </div>
+      </router-link>
+      <router-link tag="div" to="/newArticle">
+        <div class="item">
+          <i class="el-icon-s-order"></i>
+          最新文章
+        </div>
+      </router-link>
+      <router-link tag="div" to="/myRoom">
+        <div class="item">
+          <i class="el-icon-s-promotion"></i>
+          个人空间
+        </div>
+      </router-link>
+      <router-link tag="div" to="/about">
+        <div class="item">
+          <i class="el-icon-s-custom"></i>
+          关于作者
+        </div>
+      </router-link>
     </div>
   </div>
 </template>

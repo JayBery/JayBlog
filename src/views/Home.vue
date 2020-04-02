@@ -109,8 +109,7 @@ export default {
 
 <style scope>
 .music{
-  width: 1rem;
-  overflow: hidden;
+  width: 1.8rem;
 }
 .fade-enter-active, .fade-leave-active {
   transition: opacity .3s;
