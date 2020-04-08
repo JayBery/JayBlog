@@ -50,7 +50,25 @@
           <img src="https://img.debuginn.cn/wp-content/uploads/2020/03/google-chrome-2020.jpeg" alt="">
           <div class="text">程序员的插件推荐<br><span>Chrome 浏览器插件提高工作效率</span></div>
         </div>
+        <div class="card">
+          <img src="https://img.debuginn.cn/wp-content/uploads/2020/03/google-chrome-2020.jpeg" alt="">
+          <div class="text">程序员的插件推荐<br><span>Chrome 浏览器插件提高工作效率</span></div>
+        </div>
+        <div class="card">
+          <img src="https://img.debuginn.cn/wp-content/uploads/2020/03/google-chrome-2020.jpeg" alt="">
+          <div class="text">程序员的插件推荐<br><span>Chrome 浏览器插件提高工作效率</span></div>
+        </div>
+        <div class="card">
+          <img src="https://img.debuginn.cn/wp-content/uploads/2020/03/google-chrome-2020.jpeg" alt="">
+          <div class="text">程序员的插件推荐<br><span>Chrome 浏览器插件提高工作效率</span></div>
+        </div>
       </div>
+    </div>
+    <div class="footer">
+			<div class="copy">
+				© JayBerg
+			</div>
+      <a href="http://www.beian.miit.gov.cn/" rel="noopener" target="_blank" class="click"> 粤ICP备19139560号</a>
     </div>
   </div>
     
@@ -156,7 +174,7 @@ export default {
 #banner
 {
 	background: transparent;/*透明*/
-	height: 1.2rem;
+	height: .9rem;
 }
 
 .nav .logo,.nav .active
@@ -260,6 +278,19 @@ img{
 
 .text span{
   font-size: .05rem;
+}
+
+.footer{
+  font-size: 12px;
+  margin-top: 20px;
+	color: #9b9b9b;
+  line-height: 16px;
+	text-align: center;
+}
+
+.footer a{
+  text-decoration: none;
+  color: #a0a0a0;
 }
 
 </style>

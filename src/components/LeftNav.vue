@@ -4,7 +4,7 @@
       <div class="colorUse">
         <div class="close" @click="sendMsg">×</div>
         <div class="headImg">
-          <img src="../assets/images/head.jpg" alt="">
+          <img src="../assets/images/5.jpg" alt="">
         </div>
         <div class="signTitle">JayBerg小窝</div>
         <div class="sign">随你的心做你想做的事</div>
@@ -17,24 +17,18 @@
           回到首页
         </div>
       </router-link>
-      <router-link tag="div" to="/goodArticle">
-        <div class="item">
-          <i class="el-icon-star-on"></i>
-          推荐文章
-        </div>
-      </router-link>
-      <router-link tag="div" to="/newArticle">
+      <router-link tag="div" to="/file">
         <div class="item">
           <i class="el-icon-s-order"></i>
-          最新文章
+          文章归档
         </div>
       </router-link>
-      <router-link tag="div" to="/myRoom">
+      <!-- <router-link tag="div" to="/myRoom">
         <div class="item">
           <i class="el-icon-s-promotion"></i>
           个人空间
         </div>
-      </router-link>
+      </router-link> -->
       <router-link tag="div" to="/about">
         <div class="item">
           <i class="el-icon-s-custom"></i>
