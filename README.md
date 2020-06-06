@@ -1,5 +1,8 @@
 # myblog
 
+## 查看方式
+http:500nj.cn
+
 ## Project setup
 ```
 npm install
